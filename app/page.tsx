@@ -25,9 +25,9 @@
 ] as const;
 
 const contact = {
-    email: "ornek@mail.com",
-    github: "https://github.com/username",
-    linkedin: "https://linkedin.com/in/username",
+    email: "taskinevin30@gmail.com",
+    github: "https://github.com/1EvnTskn",
+    linkedin: "https://www.linkedin.com/in/evin-ta%C5%9Fk%C4%B1n-7281b3247/",
 } as const;
 
 export default function Home() {
@@ -161,13 +161,11 @@ export default function Home() {
                         <a
                             href={contact.github}
                             target="_blank"
-                            rel="noreferrer"
+                            rel="noopener noreferrer"
                             className="rounded-2xl border border-zinc-200 bg-white p-6 hover:shadow-sm"
                         >
                             <p className="text-sm text-zinc-500">GitHub</p>
-                            <p className="mt-2 text-lg font-semibold">
-                                {contact.github.replace("https://", "")}
-                            </p>
+                            <p className="mt-2 text-lg font-semibold">github.com/1EvnTskn</p>
                             <p className="mt-2 text-sm text-zinc-600">
                                 Kodlarım ve açık kaynak çalışmalarım
                             </p>
@@ -178,17 +176,16 @@ export default function Home() {
                         <a
                             href={contact.linkedin}
                             target="_blank"
-                            rel="noreferrer"
+                            rel="noopener noreferrer"
                             className="rounded-2xl border border-zinc-200 bg-white p-6 hover:shadow-sm"
                         >
                             <p className="text-sm text-zinc-500">LinkedIn</p>
-                            <p className="mt-2 text-lg font-semibold">
-                                {contact.linkedin.replace("https://", "")}
-                            </p>
+                            <p className="mt-2 text-lg font-semibold">linkedin.com/in/evin-taşkın</p>
                             <p className="mt-2 text-sm text-zinc-600">
                                 Profesyonel geçmiş ve iletişim
                             </p>
                         </a>
+
 
                     </div>
                 </div>
