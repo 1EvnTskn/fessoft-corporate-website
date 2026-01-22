@@ -2,25 +2,23 @@
     {
         type: "Web Uygulaması",
         title: "İlaç Takip Uygulaması",
-        desc:
-            "Hatırlatmalar ve takip ekranlarıyla kullanıcıların düzenli kullanımını destekleyen bir sistem.",
+        desc: "Hatırlatmalar ve takip ekranlarıyla kullanıcıların düzenli kullanımını destekleyen bir sistem.",
         tags: ["Next.js", "TypeScript", "Tailwind"],
-        href: "#",
+        href: "/projects/ilac-takip",
     },
     {
         type: "E-Ticaret",
         title: "Ürün & Sepet Modülü",
-        desc:
-            "Ürün listeleme, sepet akışı ve yönetilebilir içerik yapısıyla hızlı bir temel.",
+        desc: "Ürün listeleme, sepet akışı ve yönetilebilir içerik yapısıyla hızlı bir temel.",
         tags: ["UI/UX", "API", "Performans"],
-        href: "#",
+        href: "/projects/urun-sepet",
     },
     {
         type: "Dashboard",
         title: "Admin Panel Tasarımı",
         desc: "KPI kartları, filtreleme ve audit mantığıyla yönetim ekranı iskeleti.",
         tags: ["Dashboard", "Tables", "Auth"],
-        href: "#",
+        href: "/projects/admin-panel",
     },
 ] as const;
 
@@ -42,7 +40,7 @@ export default function Home() {
 
                 {/* Ana başlık */}
                 <h1 className="mt-6 text-4xl font-bold tracking-tight sm:text-6xl">
-                    Web siteleri ve özel yazılımlar geliştiriyoruz.
+                    Web siteleri ve özel yazılımlar geliştiriyorum.
                 </h1>
 
                 {/* Açıklama */}
@@ -77,7 +75,7 @@ export default function Home() {
 
                     <div className="rounded-2xl border border-zinc-200 p-5">
                         <p className="text-sm text-zinc-500">Teknolojiler</p>
-                        <p className="mt-1 font-semibold">Next.js • Tailwind • TS</p>
+                        <p className="mt-1 font-semibold">Next.js • Tailwind • TypeScript</p>
                     </div>
 
                     <div className="rounded-2xl border border-zinc-200 p-5">
@@ -86,8 +84,8 @@ export default function Home() {
                     </div>
                 </div>
 
-                {/* Bölümler için boşluk: az sonra dolduracağız */}
-                <div id="projeler" className="mt-20">
+                {/* Projeler */}
+                <section id="projeler" className="mt-20">
                     <div className="flex items-end justify-between gap-4">
                         <div>
                             <h2 className="text-2xl font-bold">Projeler</h2>
@@ -97,12 +95,13 @@ export default function Home() {
                         </div>
 
                         <a
-                            href="#"
+                            href="#projeler"
                             className="text-sm font-semibold text-zinc-900 underline decoration-zinc-300 underline-offset-4 hover:decoration-zinc-900"
                         >
                             Tüm projeler
                         </a>
                     </div>
+
                     <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
                         {projects.map((p) => (
                             <article
@@ -133,11 +132,10 @@ export default function Home() {
                             </article>
                         ))}
                     </div>
+                </section>
 
-                </div>
-
-
-                <div id="iletisim" className="mt-20">
+                {/* İletişim */}
+                <section id="iletisim" className="mt-20">
                     <h2 className="text-2xl font-bold">İletişim</h2>
                     <p className="mt-2 text-zinc-600">
                         Bir proje fikrin mi var, yoksa sadece selam mı vermek istiyorsun?
@@ -151,11 +149,8 @@ export default function Home() {
                         >
                             <p className="text-sm text-zinc-500">E-posta</p>
                             <p className="mt-2 text-lg font-semibold">{contact.email}</p>
-                            <p className="mt-2 text-sm text-zinc-600">
-                                Proje detaylarını paylaşmak için
-                            </p>
+                            <p className="mt-2 text-sm text-zinc-600">Proje detaylarını paylaşmak için</p>
                         </a>
-
 
                         {/* GitHub */}
                         <a
@@ -171,7 +166,6 @@ export default function Home() {
                             </p>
                         </a>
 
-
                         {/* LinkedIn */}
                         <a
                             href={contact.linkedin}
@@ -181,15 +175,10 @@ export default function Home() {
                         >
                             <p className="text-sm text-zinc-500">LinkedIn</p>
                             <p className="mt-2 text-lg font-semibold">linkedin.com/in/evin-taşkın</p>
-                            <p className="mt-2 text-sm text-zinc-600">
-                                Profesyonel geçmiş ve iletişim
-                            </p>
+                            <p className="mt-2 text-sm text-zinc-600">Profesyonel geçmiş ve iletişim</p>
                         </a>
-
-
                     </div>
-                </div>
-
+                </section>
             </div>
         </main>
     );
