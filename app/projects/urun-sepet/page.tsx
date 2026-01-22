@@ -1,46 +1,37 @@
-﻿export default function UrunSepetPage() {
+﻿import ProjectHeader from "@/app/components/ProjectHeader";
+
+export default function UrunSepetPage() {
     return (
         <main className="mx-auto max-w-3xl px-6 py-20">
-            <a
-                href="/#projeler"
-                className="text-sm font-semibold text-zinc-900 underline decoration-zinc-300 underline-offset-4 hover:decoration-zinc-900"
-            >
-                ← Geri dön
-            </a>
+            <ProjectHeader
+                title="Ürün & Sepet Modülü"
+                subtitle="Ürün listeleme, sepet akışı ve yönetilebilir yapı sunan e-ticaret modülü."
+                tags={["UI/UX", "API", "Performans"]}
+                repoHref={undefined}
+                demoHref={undefined}
+            />
 
-            <h1 className="mt-6 text-3xl font-bold tracking-tight text-zinc-900">
-                Ürün & Sepet Modülü
-            </h1>
-
-            <p className="mt-4 text-zinc-600">
-                Ürün listeleme, sepet akışı ve yönetilebilir yapı sunan, e-ticaret için hızlı bir temel modül.
-            </p>
-
-            <section className="mt-10 space-y-8">
+            <section className="mt-12 space-y-10">
                 <div>
-                    <h2 className="text-lg font-semibold text-zinc-900">Amaç</h2>
+                    <h2 className="text-lg font-semibold text-zinc-900">Problem</h2>
                     <p className="mt-2 text-zinc-600">
-                        Sepet deneyimini hızlı, anlaşılır ve performanslı hale getirip satış akışını kolaylaştırmak.
+                        Sepet akışı karmaşık olursa kullanıcı satın alma sürecini terk eder.
                     </p>
                 </div>
 
                 <div>
-                    <h2 className="text-lg font-semibold text-zinc-900">Teknolojiler / Başlıklar</h2>
-                    <div className="mt-3 flex flex-wrap gap-2">
-                        {["UI/UX", "API", "Performans"].map((t) => (
-                            <span key={t} className="rounded-full bg-zinc-100 px-3 py-1 text-xs">
-                                {t}
-                            </span>
-                        ))}
-                    </div>
+                    <h2 className="text-lg font-semibold text-zinc-900">Çözüm</h2>
+                    <p className="mt-2 text-zinc-600">
+                        Net CTA’lar, hızlı listeleme, iyi durum yönetimi ve API entegrasyonu ile akış sadeleştirilir.
+                    </p>
                 </div>
 
                 <div>
-                    <h2 className="text-lg font-semibold text-zinc-900">Öne Çıkan Özellikler</h2>
+                    <h2 className="text-lg font-semibold text-zinc-900">Sonuç</h2>
                     <ul className="mt-2 list-disc space-y-2 pl-5 text-zinc-600">
-                        <li>Ürün listeleme ve detay akışı</li>
-                        <li>Sepet ekle/çıkar güncellemeleri</li>
-                        <li>Performans odaklı arayüz düzeni</li>
+                        <li>Akıcı ürün gezintisi</li>
+                        <li>Sepet güncellemelerinde hızlı geri bildirim</li>
+                        <li>Yönetilebilir altyapı</li>
                     </ul>
                 </div>
             </section>
