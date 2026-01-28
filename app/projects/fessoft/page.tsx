@@ -7,10 +7,10 @@ export default function FessoftPage() {
                 title="Fessoft Kurumsal Web Sitesi"
                 subtitle="Yazılım, web geliştirme ve dijital çözümler sunan bir kurumsal kimlik çalışması."
                 tags={["Next.js", "TypeScript", "Tailwind CSS"]}
-                // DİKKAT: public/projects içindeki görsel adını "fessoft_demo.png" olarak düzelttiğinden emin ol!
-                imageSrc="/projects/festsoft_demo.png"
+                imageSrc="/projects/fessoft_demo.png"
                 imageAlt="Fessoft Kurumsal Web Sitesi ekran görüntüsü"
-                repoHref="https://github.com/1EvnTskn/portfolio"
+                // BURAYI GÜNCELLE:
+                repoHref="https://github.com/1EvnTskn/fessoft-corporate-website"
                 demoHref="https://portfolio-omega-one-60.vercel.app"
             />
 
