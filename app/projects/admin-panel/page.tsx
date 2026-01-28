@@ -5,11 +5,15 @@ export default function AdminPanelPage() {
         <main className="mx-auto max-w-3xl px-6 py-20">
             <ProjectHeader
                 title="Admin Panel Tasarımı"
-                subtitle="KPI kartları, filtrelenebilir tablolar ve rol bazlı erişim ile yönetim ekranı iskeleti."
-                tags={["Dashboard", "Tables", "Auth"]}
-                repoHref={undefined}
-                demoHref={undefined}
+                subtitle="Yönetim ekranı iskeleti"
+                tags={["Dashboard", "Auth"]}
+                // BURAYA DİKKAT: Başında mutlaka "/" olsun ve tırnak içinde olsun
+                imageSrc="/projects/admin.png"
+                imageAlt="Admin Panel Görseli"
+                repoHref="https://github.com/1EvnTskn/admin-panel-ui"
+                demoHref="https://portfolio-omega-one-60.vercel.app"
             />
+
 
             <section className="mt-12 space-y-10">
                 <div>

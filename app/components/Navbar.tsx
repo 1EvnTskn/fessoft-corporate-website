@@ -30,6 +30,13 @@ export default function Navbar() {
                         İletişim
                     </a>
 
+                    <a
+                        href="#hakkımda"
+                        className="hidden rounded-lg px-3 py-2 text-sm font-medium text-zinc-700 hover:bg-zinc-100 hover:text-zinc-900 sm:inline-flex"
+                    >
+                        Hakkımda
+                    </a>
+
                     {/* Sosyal ikonlar */}
                     <a
                         href={links.github}

@@ -7,8 +7,10 @@ export default function IlacTakipPage() {
                 title="İlaç Takip Uygulaması"
                 subtitle="Hatırlatma akışı ve takip ekranlarıyla kullanıcıların düzenli kullanımını destekleyen bir web uygulaması."
                 tags={["Next.js", "TypeScript", "Tailwind"]}
-                repoHref={undefined}
-                demoHref={undefined}
+                imageSrc="/projects/ilac-takip.png"
+                imageAlt="İlaç Takip Uygulaması ekran görüntüsü"
+                repoHref="https://github.com/1EvnTskn/portfolio"
+                demoHref="https://portfolio-omega-one-60.vercel.app"
             />
 
             <section className="mt-12 space-y-10">

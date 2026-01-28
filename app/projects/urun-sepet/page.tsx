@@ -7,8 +7,10 @@ export default function UrunSepetPage() {
                 title="Ürün & Sepet Modülü"
                 subtitle="Ürün listeleme, sepet akışı ve yönetilebilir yapı sunan e-ticaret modülü."
                 tags={["UI/UX", "API", "Performans"]}
-                repoHref={undefined}
-                demoHref={undefined}
+                imageSrc="/projects/urun-sepet.png"
+                imageAlt="Ürün & Sepet Modülü ekran görüntüsü"
+                repoHref="https://github.com/1EvnTskn/portfolio"
+                demoHref="https://portfolio-omega-one-60.vercel.app"
             />
 
             <section className="mt-12 space-y-10">
